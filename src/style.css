@@ -1,0 +1,11 @@
+.nav_{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: coral;
+    width: 100%;
+}
+
+.pic {
+   background: url('./rest.jpg');
+  }
