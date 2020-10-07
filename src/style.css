@@ -6,6 +6,10 @@
     width: 100%;
 }
 
-.pic {
-   background: url('./rest.jpg');
-  }
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: ;
+    font-weight: bold;
+    font-size: 1.5em;
+}

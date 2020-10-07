@@ -1,3 +1,6 @@
+import { home } from './home.js';
+
+
 export const nav = () => {
     let content = document.getElementById("content");
 
@@ -6,9 +9,9 @@ export const nav = () => {
 
 
     let ele1 = document.createElement("p")
-    ele1.innerHTML = "Home"
-    ele1.setAttribute("href", "https://www.w3schools.com");
-
+    ele1.innerHTML = '<a href="'  + '">Home</a>'
+    
+    
     let ele2 = document.createElement("p")
     ele2.innerHTML = "Our Menu"
     ele2.classList.add('menu')
@@ -24,27 +27,6 @@ export const nav = () => {
     navv.appendChild(ele2)
     navv.appendChild(ele3)
     content.appendChild(navv)
-    ele2.addEventListener("onmouseover", menu)
    
 }
 
-export const picture=()=>{
-  let content = document.getElementById("content");
-  let bodi = document.createElement('div');
-  bodi.classList.add('pic');
-
-  const myImage = new Image();
-  myImage.src = restt;
-  bodi.appendChild(myImage);
-  content.appendChild(bodi)
-}
-
- const menu =()=> {
-    let ar = ["Rice", "Beans", "Yam", "Garri"]
-    let str = '<ul>'
-    for (let i = 0; i <= ar.length-1; i++) {
-    str += '<li>' + ar[i] + '</li>' + + '<br>'
-    
-    }
-      return str 
-}
