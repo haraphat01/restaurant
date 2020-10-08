@@ -1,12 +1,40 @@
 import _ from 'lodash';
 import './style.css';
 import { nav } from './nav.js';
-// import {home } from './home.js';
 import {header} from './header.js';
+import { home } from './home';
+import { contact } from './contact';
+import {menu}      from './menu';
 
-header()
-nav()
-// home()
+const app = () => {
+    let content = document.getElementById("content");
+    let container = document.createElement('div');
+    container.classList.add('container');
+    content.append(header(),nav(), container)
+    content.addEventListener('click',function (e){
+    if (e.target.classList.contains('home_button')){
+        container.innerHTML = ""
+        container.appendChild(home())
+    } else if (e.target.classList.contains('menu')) {
+        container.innerHTML = ""
+        container.appendChild(menu())
+   } else {
+    container.innerHTML = ""
+    container.appendChild(contact())
+   }
+
+     
+    } )
+
+
+    
+
+
+   
+}
+
+
+app()
 
 
 

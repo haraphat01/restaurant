@@ -3,7 +3,11 @@
     flex-direction: row;
     justify-content: space-around;
     background-color: coral;
+    height: 50px;
     width: 100%;
+    align-items: center;
+    list-style: none;
+    margin : 0;
 }
 
 .header {
