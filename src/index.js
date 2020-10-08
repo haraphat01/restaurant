@@ -11,6 +11,8 @@ const app = () => {
     let container = document.createElement('div');
     container.classList.add('container');
     content.append(header(),nav(), container)
+    
+    container.appendChild(home())
     content.addEventListener('click',function (e){
     if (e.target.classList.contains('home_button')){
         container.innerHTML = ""

@@ -6,7 +6,6 @@ import Fud4 from './images/yam.jpg';
 export const menu = () => {
     let element = document.createElement('div')
     let food = [fud1, fud2, fud3, fud4]
-    
     for (let i = 0; i < food.length; i += 1){
      const listing = document.createElement('li');
      listing.classList.add = ('listing');
@@ -24,5 +23,8 @@ export const menu = () => {
      listing.appendChild(title)
      listing.appendChild(price)
     }
+
+    element.appendChild(listing)
+    return element
 }
 
