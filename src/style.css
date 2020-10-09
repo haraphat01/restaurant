@@ -1,3 +1,8 @@
+body {
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
 .nav_{
     display: flex;
     flex-direction: row;
@@ -14,9 +19,9 @@
 .header {
     display: flex;
     justify-content: center;
-    background-color: ;
     font-weight: bold;
     font-size: 1.5em;
+    width: 100%;
 }
 
 .homeDiv, .contact {
@@ -24,7 +29,12 @@
     border-radius: 40px;
     border: 10px, crimson;
     background-color: cornsilk;
-    height: 20em;
-    padding-top: 4em;
+    height: 15em;
+    padding-top: 2em;
+    margin: 2em 8em ;
+    background: url('./images/rest.jpg');
+    background-repeat: no-repeat;
+    background-position: inherit;
+    color: #ffff;
    
 }

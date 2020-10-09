@@ -1,16 +1,19 @@
-import Fud1 from './images/garri.jpg';
-import Fud2 from './images/rice.jpg';
-import Fud3 from './images/tuwo.jpg';
-import Fud4 from './images/yam.jpg';
+import fud1 from './images/garri.jpg';
+import fud2 from './images/rice.jpg';
+import fud3 from './images/tuwo.jpg';
+import fud4 from './images/yam.jpg';
 
 export const menu = () => {
     let element = document.createElement('div')
     let food = [fud1, fud2, fud3, fud4]
+    let p_menu = document.createElement('ul')
+    p_menu.classList.add('p_menu')
     for (let i = 0; i < food.length; i += 1){
-     const listing = document.createElement('li');
+    let listing = document.createElement('li');
      listing.classList.add = ('listing');
      let images = document.createElement('img')
-     images = food[i]
+     images.classList.add = ('images')
+     images.src = food[i]
      let title = document.createElement('p')
      title.classList.add('title')
      title.innerHTML = "Random Title"
@@ -19,12 +22,12 @@ export const menu = () => {
      price.innerHTML = (Math.random() * 100)
      
 
-     listing.appendChild(images)
-     listing.appendChild(title)
-     listing.appendChild(price)
+     listing.append(images, title, price)
+     p_menu.appendChild(listing)
+     
     }
 
-    element.appendChild(listing)
+    element.appendChild(p_menu)
     return element
 }
 
