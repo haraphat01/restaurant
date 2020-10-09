@@ -1,5 +1,5 @@
 
-export default function nav() {
+export default const nav=() => {
   const navv = document.createElement('ul');
   navv.classList.add('nav_');
 

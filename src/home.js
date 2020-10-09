@@ -1,4 +1,4 @@
-export default function home() {
+export default const home =() => {
   const homeDiv = document.createElement('div');
   homeDiv.classList.add('homeDiv');
 
