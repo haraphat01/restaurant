@@ -1,4 +1,4 @@
-export function contact() {
+export default function contact() {
   const contact = document.createElement('div');
   contact.classList.add('contact');
   const hOne = document.createElement('h1');
