@@ -1,40 +1,52 @@
 body {
-    overflow-x: hidden;
-    margin: 0 auto;
+  overflow-x: hidden;
+  margin: 0 auto;
 }
 
-.nav_{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: coral;
-    height: 50px;
-    width: 100%;
-    align-items: center;
-    list-style: none;
-    margin : 0;
-    border-radius: 10px;
+.nav_ {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: coral;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  border-radius: 10px;
 }
 
 .header {
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 1.5em;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  width: 100%;
 }
 
-.homeDiv, .contact {
-    text-align: center;
-    border-radius: 40px;
-    border: 10px, crimson;
-    background-color: cornsilk;
-    height: 15em;
-    padding-top: 2em;
-    margin: 2em 8em ;
-    background: url('./images/rest.jpg');
-    background-repeat: no-repeat;
-    background-position: inherit;
-    color: #ffff;
-   
+.homeDiv,
+.contact {
+  text-align: center;
+  border-radius: 40px;
+  height: 15em;
+  padding-top: 2em;
+  margin: 2em 8em;
+  background: url('./images/rest.jpg');
+  background-repeat: no-repeat;
+  background-position: inherit;
+  color: currentColor;
+}
+
+.p_menu {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+  font-weight: 600;
+}
+
+.image {
+  width: 2000px;
 }
