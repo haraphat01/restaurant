@@ -1,8 +1,8 @@
-export const header =() => {
-    let head = document.createElement('div');
-    head.classList.add('header');
-    let head_p = document.createElement('p');
-    head_p.innerHTML = "Pencil Restaurant"
-    head.appendChild(head_p)
-    return head
-}
+export const header = () => {
+  const head = document.createElement('div');
+  head.classList.add('header');
+  const headP = document.createElement('p');
+  headP.innerHTML = 'Pencil Restaurant';
+  head.appendChild(headP);
+  return head;
+};
