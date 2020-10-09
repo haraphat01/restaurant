@@ -31,6 +31,7 @@ body {
   height: 15em;
   padding-top: 2em;
   margin: 2em 8em;
+  flex-wrap: wrap;
   background: url('./images/rest.jpg');
   background-repeat: no-repeat;
   background-position: inherit;
