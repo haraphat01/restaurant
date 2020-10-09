@@ -1,4 +1,4 @@
-export default const contact =() => {
+const contact = () => {
   const contact = document.createElement('div');
   contact.classList.add('contact');
   const hOne = document.createElement('h1');
@@ -11,4 +11,6 @@ export default const contact =() => {
 
 
   return contact;
-}
+};
+
+export default contact;

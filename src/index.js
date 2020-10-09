@@ -1,10 +1,10 @@
 
 import './style.css';
-import { nav } from './nav';
-import { header } from './header';
-import { home } from './home';
-import { contact } from './contact';
-import { menu } from './menu';
+import nav from './nav';
+import header from './header';
+import home from './home';
+import contact from './contact';
+import menu from './menu';
 
 const app = () => {
   const content = document.getElementById('content');

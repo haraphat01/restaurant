@@ -3,7 +3,7 @@ import fud2 from './images/rice.jpg';
 import fud3 from './images/tuwo.jpg';
 import fud4 from './images/yam.jpg';
 
-export default const menu =()=> {
+const menu = () => {
   const element = document.createElement('div');
   element.classList.add = ('iyawon');
   const food = [fud1, fud2, fud3, fud4];
@@ -29,4 +29,6 @@ export default const menu =()=> {
 
   element.appendChild(pMenu);
   return element;
-}
+};
+
+export default menu;

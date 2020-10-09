@@ -1,5 +1,4 @@
-
-export default const nav=() => {
+const nav = () => {
   const navv = document.createElement('ul');
   navv.classList.add('nav_');
 
@@ -25,4 +24,5 @@ export default const nav=() => {
   navv.appendChild(ele2);
   navv.appendChild(ele3);
   return navv;
-}
+};
+export default nav;
